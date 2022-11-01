@@ -71,5 +71,5 @@ resource "azurerm_linux_virtual_machine" "linuxvm" {
   }
 
   // Apply custom configuration to each VM
-  custom_data = local.vm_custom_data
+  custom_data = base64encode(local.vm_custom_data)
 }
