@@ -1,6 +1,7 @@
 locals {
   vm_custom_data = <<CUSTOM
     #!/bin/bash
+    #!/bin/bash
     sudo apt update
     sudo apt install net-tools -y
     sudo apt install apache2 -y
