@@ -9,7 +9,7 @@ output "vm_iface_id" {
   value = azurerm_linux_virtual_machine.linuxvm.*.network_interface_ids[0]
 }
 
-output "vm_iface_config" {
+output "ip_configuration" {
   description = "VM interface configuration"
   value = azurerm_network_interface.iface.*.ip_configuration[0].name
 }
