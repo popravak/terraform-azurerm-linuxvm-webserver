@@ -11,7 +11,7 @@ output "vm_iface_id" {
 
 output "vm_iface_config_name" {
   description = "VM interface configuration"
-  value = azurerm_network_interface.iface.*.ip_configuration[0].name[0]
+  value = azurerm_network_interface.iface.*.ip_configuration[0].name
 }
 
 /*
