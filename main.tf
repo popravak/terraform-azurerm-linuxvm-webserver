@@ -33,7 +33,7 @@ resource "azurerm_network_interface" "iface" {
 
   ip_configuration {
     name                          = "ipconfig-${var.business_unit_prefix}-${var.environment_prefix}-${count.index}-${random_string.random.result}"
-    subnet_id                     = module.vnet.subnet_ids[0] // Put the VM in second subnet
+    subnet_id                     = module.vnet.subnet_ids[0]
     private_ip_address_allocation = "Dynamic"
     public_ip_address_id          = azurerm_public_ip.pip[count.index].id
   }
