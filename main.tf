@@ -23,6 +23,7 @@ resource "azurerm_public_ip" "pip" {
   resource_group_name = module.rg.rg_name
   location            = module.rg.location
   allocation_method   = "Static"
+  sku                 = "Standard"
 }
 
 resource "azurerm_network_interface" "iface" {
