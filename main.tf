@@ -1,12 +1,12 @@
 
 module "rg" {
   source  = "popravak/rg/azurerm"
-  version = "1.0.2"
+  version = "1.0.3"
 }
 
 module "vnet" {
   source  = "popravak/vnet/azurerm"
-  version = "1.0.3"
+  version = "1.0.4"
   rg_name = module.rg.rg_name
 }
 
