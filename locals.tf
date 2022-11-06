@@ -1,5 +1,5 @@
 locals {
-vm_custom_data = <<CUSTOM
+  vm_custom_data = <<CUSTOM
 #!/bin/bash
 sudo apt update
 sudo apt install net-tools -y

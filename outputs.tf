@@ -15,3 +15,7 @@ output "ip_configuration" {
   value       = azurerm_network_interface.iface.*.ip_configuration[0]
 }
 
+output "vmcount" {
+  description = "Number of created VMs"
+  value       = var.vmcount
+}
