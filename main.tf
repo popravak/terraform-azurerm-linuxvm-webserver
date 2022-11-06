@@ -1,9 +1,9 @@
-
+/*
 module "rg" {
   source  = "popravak/rg/azurerm"
   version = "1.0.3"
 }
-
+*/
 module "vnet" {
   source  = "popravak/vnet/azurerm"
   version = "1.0.4"
