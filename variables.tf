@@ -1,4 +1,16 @@
 
+variable "rg_name" {
+  description = "Resource group name"
+  type        = string
+  default     = "rgspo001"
+}
+
+variable "location" {
+  description = "Resource group location"
+  type        = string
+  default     = "North Europe"
+}
+
 variable "tags" {
   description = "VM tags"
   type        = map(string)
