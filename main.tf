@@ -1,4 +1,4 @@
-/*
+
 module "rg" {
   source  = "popravak/rg/azurerm"
   version = "1.0.3"
@@ -9,7 +9,6 @@ module "vnet" {
   version = "1.0.4"
 }
 
-*/
 resource "random_string" "random" {
   min_lower   = 2
   min_upper   = 2
