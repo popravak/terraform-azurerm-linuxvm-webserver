@@ -6,7 +6,8 @@ output "public_ip_address" {
 
 output "vm_iface_id" {
   description = "VM interface ID"
-  value       = azurerm_linux_virtual_machine.linuxvm.*.network_interface_ids[0]
+  //value       = azurerm_linux_virtual_machine.linuxvm.*.network_interface_ids[0]
+  value = azurerm_network_interface.iface.*.id
 }
 
 output "ip_configuration" {
